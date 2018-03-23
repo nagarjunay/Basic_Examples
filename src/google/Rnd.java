@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class Rnd {
@@ -43,7 +44,12 @@ public class Rnd {
 			{ 
 				System.out.println(links.get(i).getText());
 	        }*/
-
+    
+		 /*To verify actual result and Expected result  */
+		 String actal_error= driver.findElement(By.xpath("//*[@id=\"errorMessage\"]/h3")).getText();
+	     String expected_error="パスワードの検証に失敗しました";
+	     Assert.assertEquals(actal_error, expected_error);
+	     System.out.println("Password verification failed");
 			
 }
 }
