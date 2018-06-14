@@ -42,6 +42,7 @@ public class Dropdown
 		sel.selectByIndex(1);
 		Select sel1=new Select(driver.findElement(By.xpath(".//*[@id='Childrens']")));
 		sel1.selectByIndex(2);
+		
 
 	     
     }
