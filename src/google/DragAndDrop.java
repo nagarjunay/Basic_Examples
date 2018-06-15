@@ -16,8 +16,9 @@ public class DragAndDrop {
  
 	@BeforeTest
 	public void setup() throws Exception {
-		System.setProperty("webdriver.chrome.driver", "E:\\Selenium\\chromedriver_win32\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "D:\\E drive\\Selenium\\chromedriver_win32\\chromedriver_win32\\chromedriver.exe");
 		driver = new ChromeDriver();
+		//driver= new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"),DesiredCapabilities.chrome());
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		driver.get("http://only-testing-blog.blogspot.in/2014/09/drag-and-drop.html");
