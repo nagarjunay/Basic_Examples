@@ -1,7 +1,7 @@
 package google;
 
 import org.openqa.selenium.By;
-
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
@@ -42,7 +42,12 @@ public class Dropdown
 		sel.selectByIndex(1);
 		Select sel1=new Select(driver.findElement(By.xpath(".//*[@id='Childrens']")));
 		sel1.selectByIndex(2);
-		
+		//Java script 
+		JavascriptExecutor executor= (JavascriptExecutor)driver;
+	    executor.executeScript("document.getElementById('ddlDate').style.display='block';");
+	    Select selectAction = new Select(driver.findElement(By.xpath("//*[@id=\"ddlDate\"]")));
+	    selectAction.selectByValue("2018/06/23");
+	    selectAction.selectByIndex(3);
 
 	     
     }
