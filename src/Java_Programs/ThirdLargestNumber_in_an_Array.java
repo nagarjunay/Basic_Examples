@@ -18,6 +18,8 @@ public class ThirdLargestNumber_in_an_Array {
 			}
 		}
 		return a[total - 3];
+	    //return a[total - 2]; to find the 2nd largest number
+	   //return a[1]; to find the 2nd smallest number	
 	}
 
 	public static void main(String args[]) {
