@@ -1,6 +1,14 @@
-package google;
+package Java_Programs;
 
-public class java_programs {
+public class Fibonacci_series {
+	
+	
+	/*In fibonacci series, next number is the sum of previous two numbers for example 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55 etc. The first two numbers of fibonacci series are 0 and 1.
+
+	There are two ways to write the fibonacci series program in java:
+
+	Fibonacci Series without using recursion
+	Fibonacci Series using recursion*/
 
 	// the fibonacci series program in java without using recursion.
 	public static void main(String args[]) {
@@ -33,40 +41,11 @@ public class java_programs {
 	  int count=10;    
 	  System.out.print(n1+" "+n2);   //printing 0 and 1    
 	  printFibonacci(count-2);      //n-2 because 2 numbers are already printed   
-	 }  
+	 } */
 	
 	
 	
 	
-	/*Prime Number Program using Method in Java
-
-	public class Prime {
-		static void checkPrime(int n) {
-			int i, m = 0, flag = 0;
-			m = n / 2;
-			if (n == 0 || n == 1) {
-				System.out.println(n + " is not prime number");
-			} else {
-				for (i = 2; i <= m; i++) {
-					if (n % i == 0) {
-						System.out.println(n + " is not prime number");
-						flag = 1;
-						break;
-					}
-				}
-				if (flag == 0) {
-					System.out.println(n + " is prime number");
-				}
-			} // end of else
-		}
-
-		public static void main(String args[]) {
-			checkPrime(1);
-			checkPrime(3);
-			checkPrime(17);
-			checkPrime(20);
-		}
-	}*/
 	
 
 }
