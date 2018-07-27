@@ -28,11 +28,15 @@ public class DynamicGoogleSearch {
 	@Test
 	public void Google() {
 		
-		driver.findElement(By.id("lst-ib")).sendKeys("test");
+		driver.findElement(By.id("lst-ib")).sendKeys("testing");
 		List<WebElement> list = driver.findElements(By.xpath("//ul[@role='listbox']//li/descendant::div[@class='sbqs_c']"));
-		System.out.println("Total of suggestions in google search box" + list.size());
-		for(int i=0; i<list.size(); i++) {
+		System.out.println("Total of suggestions in google search box===>" + list.size());
+		for(int i=0; i<list.size(); i=i+1) {
 			System.out.println(list.get(i).getText());
+			if(list.get(i).getText().contains("testing tools")) {
+				list.get(i).click();
+				break;
+			}
 		}
 	}
 }
