@@ -25,7 +25,7 @@ public class Fibonacci_series {
 	}
 	
 	
-	//the fibonacci series program in java using recursion.
+	/*the fibonacci series program in java using recursion.
 	 
 	 static int n1=0,n2=1,n3=0;    
 	 static void printFibonacci(int count){    
@@ -41,7 +41,7 @@ public class Fibonacci_series {
 	  int count=10;    
 	  System.out.print(n1+" "+n2);   //printing 0 and 1    
 	  printFibonacci(count-2);      //n-2 because 2 numbers are already printed   
-	 } 
+	 } */
 	
 	
 	

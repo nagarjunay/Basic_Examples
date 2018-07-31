@@ -27,7 +27,7 @@ public class Palindrome {
 	Here, user has to put the number or string as input to check if the number/string is palindrome.*/
 	
 	
-	public static void main(String args[]) {
+	/*public static void main(String args[]) {
 		String original, reverse = ""; // Objects of String class
 		Scanner in = new Scanner(System.in);
 		System.out.println("Enter a string/number to check if it is a palindrome");
@@ -40,5 +40,5 @@ public class Palindrome {
 		else
 			System.out.println("Entered string/number isn't a palindrome.");
 	}
-
+*/
 }

@@ -16,7 +16,7 @@ public class Factorial_Number {
 	 
 	// the factorial program in java using recursion.
 	 
-	 class FactorialExample2{  
+	/* class FactorialExample2{  
 		 static int factorial(int n){    
 		  if (n == 0)    
 		    return 1;    
@@ -28,6 +28,6 @@ public class Factorial_Number {
 		  int number=4;//It is the number to calculate factorial    
 		  fact = factorial(number);   
 		  System.out.println("Factorial of "+number+" is: "+fact);    
-		 }  
+		 }  */
 
 }
