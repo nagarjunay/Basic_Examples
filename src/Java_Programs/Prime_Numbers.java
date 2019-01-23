@@ -8,7 +8,7 @@ public class Prime_Numbers {
 */
 	// Prime Number Program using Method in Java
 
-	static void checkPrime(int n) 
+	/*static void checkPrime(int n) 
 	{
 		int i, m = 0, flag = 0;
 		m = n / 2;
@@ -38,5 +38,35 @@ public class Prime_Numbers {
 		checkPrime(3);
 		checkPrime(17);
 		checkPrime(20);
-	}
+	}*/
+	
+	
+	
+	 static boolean isPrime(int n) 
+	    { 
+	        // Corner case 
+	        if (n <= 1) 
+	            return false; 
+	       
+	        // Check from 2 to n-1 
+	        for (int i = 2; i < n; i++) 
+	            if (n % i == 0) 
+	                return false; 
+	       
+	        return true; 
+	    } 
+	 
+	      
+	    /* Driver program  */
+	    public static void main(String[] args)  
+	    { 
+	         if(isPrime(22))  
+	         System.out.println(" Prime number") ; 
+	          
+	         else 
+	         System.out.println(" Not a Prime number"); 
+	           
+	    } 
+	
+	   
 }
