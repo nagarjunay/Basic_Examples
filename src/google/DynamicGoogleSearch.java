@@ -28,18 +28,30 @@ public class DynamicGoogleSearch {
 	@Test
 	public void Google() 
 	{
-		
-		driver.findElement(By.id("lst-ib")).sendKeys("indo");
-		List<WebElement> list = driver.findElements(By.xpath("//ul[@role='listbox']//li/descendant::div[@class='sbqs_c']"));
+		//sbqs_c
+		driver.findElement(By.xpath("//*[@id=\"tsf\"]/div[2]/div/div[1]/div/div[1]/input")).sendKeys("ind");
+		List<WebElement> list = driver.findElements(By.xpath("//ul[@role='listbox']//li/descendant::div[@class='sbl1']"));
 		System.out.println("Total of suggestions in google search box===>" + list.size());
 		for(int i=0; i<=list.size(); i++) 
 		{
 			System.out.println(list.get(i).getText());
-			if(list.get(i).getText().contains("indonesia time")) 
+			if(list.get(i).getText().contains("indian railway")) 
 			{
 				list.get(i).click();
 				break;
 			}
 		}
+		
+		/*List<WebElement> list = driver.findElements(By.xpath("//ul//li[@class='sbct']//div[@class='sbl1']"));
+		int size = list.size();
+		System.out.println(size);
+		for(int i=0; i<size; i++)
+		{
+			String text = list.get(i).getText();
+			System.out.println(text);
+			if(text.contains(s))
+			{
+				
+			} */		
 	}
 }
