@@ -26,7 +26,7 @@ public class DynamicGoogleSearch {
     }
 	
 	@Test
-	public void Google() 
+	public void Google() throws Exception 
 	{
 		//sbqs_c
 		driver.findElement(By.xpath("//*[@id=\"tsf\"]/div[2]/div/div[1]/div/div[1]/input")).sendKeys("ind");
@@ -35,11 +35,11 @@ public class DynamicGoogleSearch {
 		for(int i=0; i<=list.size(); i++) 
 		{
 			System.out.println(list.get(i).getText());
-			if(list.get(i).getText().contains("indian railway")) 
+			if(list.get(i).getText().contains("indigo")) 
 			{
 				list.get(i).click();
 				break;
-			}
+			}	
 		}
 		
 		/*List<WebElement> list = driver.findElements(By.xpath("//ul//li[@class='sbct']//div[@class='sbl1']"));

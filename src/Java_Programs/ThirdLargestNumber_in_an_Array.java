@@ -27,5 +27,6 @@ public class ThirdLargestNumber_in_an_Array {
 		int b[] = { 44, 66, 99, 77, 33, 22, 55 };
 		System.out.println("Third Largest: " + getThirdLargest(a, 6));
 		System.out.println("Third Largest: " + getThirdLargest(b, 7));
+		
 	}
 }

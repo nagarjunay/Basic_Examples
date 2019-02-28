@@ -28,6 +28,8 @@ public class Dropdown {
 		driver.get("http://192.168.167.32/rakurakutaxi/");
 		// driver.get("http://rakurakuforpc-env.us-west-1.elasticbeanstalk.com/");
 		driver.manage().window().maximize();
+		// driver.get("http://rakurakuforpc-env.us-west-1.elasticbeanstalk.com/");
+		
 	}
 
 	@Test

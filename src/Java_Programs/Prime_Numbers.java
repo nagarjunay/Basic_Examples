@@ -59,7 +59,7 @@ public class Prime_Numbers {
 	    /* Driver program  */
 	    public static void main(String[] args)  
 	    { 
-	         if(isPrime(22))  
+	         if(isPrime(3))  
 	         System.out.println(" Prime number") ; 
 	          
 	         else 
