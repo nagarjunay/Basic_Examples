@@ -3,12 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="google.Broken_Links_Images">
+      <class name="google.Dynamic_WebTables">
         <methods>
           <include name="Google"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- google.Broken_Links_Images -->
+      </class> <!-- google.Dynamic_WebTables -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

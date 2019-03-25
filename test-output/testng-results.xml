@@ -1,87 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="11642" started-at="2019-02-20T04:48:42Z" finished-at="2019-02-20T04:48:53Z">
+  <suite name="Default suite" duration-ms="11883" started-at="2019-03-22T08:05:36Z" finished-at="2019-03-22T08:05:48Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="11642" started-at="2019-02-20T04:48:42Z" finished-at="2019-02-20T04:48:53Z">
-      <class name="google.Broken_Links_Images">
-        <test-method status="PASS" signature="setup()[pri:0, instance:google.Broken_Links_Images@3532ec19]" name="setup" is-config="true" duration-ms="11384" started-at="2019-02-20T04:48:42Z" finished-at="2019-02-20T04:48:53Z">
+    <test name="Default test" duration-ms="11883" started-at="2019-03-22T08:05:36Z" finished-at="2019-03-22T08:05:48Z">
+      <class name="google.Dynamic_WebTables">
+        <test-method status="PASS" signature="setup()[pri:0, instance:google.Dynamic_WebTables@3532ec19]" name="setup" is-config="true" duration-ms="8254" started-at="2019-03-22T08:05:36Z" finished-at="2019-03-22T08:05:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="FAIL" signature="Google()[pri:0, instance:google.Broken_Links_Images@3532ec19]" name="Google" duration-ms="216" started-at="2019-02-20T04:48:53Z" finished-at="2019-02-20T04:48:53Z">
-          <exception class="javax.net.ssl.SSLHandshakeException">
-            <message>
-              <![CDATA[sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
-at sun.security.ssl.Alerts.getSSLException(Unknown Source)
-at sun.security.ssl.SSLSocketImpl.fatal(Unknown Source)
-at sun.security.ssl.Handshaker.fatalSE(Unknown Source)
-at sun.security.ssl.Handshaker.fatalSE(Unknown Source)
-at sun.security.ssl.ClientHandshaker.serverCertificate(Unknown Source)
-at sun.security.ssl.ClientHandshaker.processMessage(Unknown Source)
-at sun.security.ssl.Handshaker.processLoop(Unknown Source)
-at sun.security.ssl.Handshaker.process_record(Unknown Source)
-at sun.security.ssl.SSLSocketImpl.readRecord(Unknown Source)
-at sun.security.ssl.SSLSocketImpl.performInitialHandshake(Unknown Source)
-at sun.security.ssl.SSLSocketImpl.startHandshake(Unknown Source)
-at sun.security.ssl.SSLSocketImpl.startHandshake(Unknown Source)
-at sun.net.www.protocol.https.HttpsClient.afterConnect(Unknown Source)
-at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(Unknown Source)
-at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
-at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
-at java.net.HttpURLConnection.getResponseCode(Unknown Source)
-at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(Unknown Source)
-at google.Broken_Links_Images.Google(Broken_Links_Images.java:46)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
-at sun.security.validator.PKIXValidator.doBuild(Unknown Source)
-at sun.security.validator.PKIXValidator.engineValidate(Unknown Source)
-at sun.security.validator.Validator.validate(Unknown Source)
-at sun.security.ssl.X509TrustManagerImpl.validate(Unknown Source)
-at sun.security.ssl.X509TrustManagerImpl.checkTrusted(Unknown Source)
-at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(Unknown Source)
-... 40 more
-Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
-at sun.security.provider.certpath.SunCertPathBuilder.build(Unknown Source)
-at sun.security.provider.certpath.SunCertPathBuilder.engineBuild(Unknown Source)
-at java.security.cert.CertPathBuilder.build(Unknown Source)
-... 46 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- javax.net.ssl.SSLHandshakeException -->
+        <test-method status="PASS" signature="Google()[pri:0, instance:google.Dynamic_WebTables@3532ec19]" name="Google" duration-ms="3609" started-at="2019-03-22T08:05:45Z" finished-at="2019-03-22T08:05:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Google -->
-      </class> <!-- google.Broken_Links_Images -->
+      </class> <!-- google.Dynamic_WebTables -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
