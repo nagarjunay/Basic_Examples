@@ -41,7 +41,7 @@ public class DynamicGoogleSearch {
 				break;
 			}	
 		}
-		
+		driver.close();
 		/*List<WebElement> list = driver.findElements(By.xpath("//ul//li[@class='sbct']//div[@class='sbl1']"));
 		int size = list.size();
 		System.out.println(size);
